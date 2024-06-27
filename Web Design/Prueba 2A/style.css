@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Open Sans;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    
+    background-repeat: repeat;
+}
+
+body * {
+    box-sizing: content-box;
+}
+header {
+    height: 80px;
+    padding: 16px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+header .icons{
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 16px; 
+    padding-right: 12rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+    background-color: transparent;
+    
+}
+.menu {
+    background-color: transparent;
+    box-shadow: 0px 1px 2px #00000024;
+}
+.nav-link {
+    display: flex;
+    justify-content: right;
+}
+nav .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    height: 100;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.nav-link-bottom {
+    color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center ;
+    justify-content: right;
+    transition: all 400ms ease;
+}
+.nav-link-bottom:hover{
+    background: #804000;
+    color: white;
+}
+.icons {
+    display: flex;
+    justify-content: left;
+}
+.present {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+.present h1 {
+    font-size: 2rem;
+    color: #795a3b;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.text p {
+    font-size: 1rem;
+    text-align: center;
+    color: #795a3b;
+    background: transparent;
+}
+.bottom-active {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.bottom-active a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center ;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.bottom-active a:hover{
+    background: #804000;
+    color: white;
+}
+.transp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.taza {
+    height: 2rem;
+    display: flex;
+    justify-content: center; 
+}

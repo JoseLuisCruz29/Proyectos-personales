@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+    box-sizing: content-box;
+}
+main {
+    padding: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+}
+
+header {
+    height: 80px;
+    padding: 0px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+header .logo {
+    height: 100%;
+}
+
+nav .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.nav-link.active {
+    border-bottom: 12px solid black;
+}
+
+section {
+    transition: all 400ms ease;
+    color: #ffffff;
+    background: #795a3b;
+    margin: 1rem 0;
+    display: flex;
+    border-radius: 0%;
+    padding: 0%;
+}
+.presen-blog{
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+.presen-blog h1 {
+    font-size: 5rem;
+    color: #795a3b;
+}
+.presen-blog .presen2-blog a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center ;
+    padding: 10px;
+    margin-top: 10px;
+    color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.presen-blog .presen2-blog a:hover {
+    background: #804000;
+    color: white;
+}
+.principal .principal2 {
+    display: flex;
+    flex: auto;
+    box-sizing: content-box;
+    padding: 1rem 0px 0px 0px 0px;
+    align-items: center;
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.post h3{
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    gap: 6px;
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+.post p {
+    margin: 0px;
+}
+.contenido {
+    padding: 0 32px;
+}
