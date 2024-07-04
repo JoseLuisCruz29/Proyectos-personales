@@ -12,6 +12,7 @@ html {
 body {
     margin: 0;
     background-color: rgba(197, 189, 189, 0.826);
+    flex-direction: column;
 }
 header {
     background-color: #364552;

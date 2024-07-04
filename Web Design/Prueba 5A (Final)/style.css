@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('Img/background.webp');
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    height: 80px;
+    padding: 0px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0px 1px 2px #ccc;
+}
+h1 {
+    display: flex;
+    margin-top: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+}
+
+.menu-option {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.present {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-right: 20rem;
+    color: white;
+}
+
+.present-b {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.present h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bottom {
+    display: flex;
+    gap: 16px;
+}
+
+.present-b a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 24px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    background: black;
+}
+
+.present-b a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.article {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    padding: 20px;
+    padding-left: 60rem;
+    color: white;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    
+}
+
+.article p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
