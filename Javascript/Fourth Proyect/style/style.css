@@ -1,0 +1,11 @@
+body {
+    background-color: #000000;
+}
+canvas{
+    border: 4px solid #fff;
+    background: url('../img/Screenshot\ 2024-08-11\ 191028.png');
+    background-size: cover;
+    border-bottom: transparent;
+    margin: auto;
+    display: block;
+}
