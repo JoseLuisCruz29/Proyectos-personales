@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ahorro</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1>Calculadora de Ahorro</h1>
+            <p>Novedosa calculadora que detalla las ganancias que obtienes con tus ahorros cada mes del año.</p>
+            <p>Completa el formulario y planifica tu futuro.</p>
+        </div>
+        <form id="savings-form" class="calculator-form">
+            <div class="form-group">
+                <label for="product">Producto</label>
+                <select id="product" required>
+                    <option value="savings-account">Cuenta de Ahorros</option>
+                    <option value="fixed-term">Depósito a Plazo Fijo</option>
+                    <option value="investment-fund">Fondo de Inversión</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Monto Inversión ($)</label>
+                <input type="number" id="amount" placeholder="Monto inversión" required>
+            </div>
+
+            <div class="form-group">
+                <label for="term">Plazo</label>
+                <input type="number" id="term" value="1" required>
+                <select id="term-period">
+                    <option value="years">Años</option>
+                    <option value="months">Meses</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interest-rate">Tasa de Interés Anual (%)</label>
+                <input type="number" id="interest-rate" placeholder="Tasa de interés anual" required step="0.01">
+                <small>*Para colocar la tasa, es recomendable consultar nuestro <a href="#">Tarifario de
+                        Servicios</a></small>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">Fecha Apertura</label>
+                <input type="date" id="start-date" value="2024-08-16">
+            </div>
+
+            <div class="form-group">
+                <label for="tax-rate">Impuesto (%)</label>
+                <input type="number" id="tax-rate" value="10" required step="0.01">
+                <small>*Impuesto gravado al interés generado, como establece la ley.</small>
+            </div>
+
+            <button type="submit" class="calculate-button">Solicitar Cuenta de Ahorro</button>
+        </form>
+        <div id="result" class="result-container">
+            <!-- Aquí se mostrará el resultado -->
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

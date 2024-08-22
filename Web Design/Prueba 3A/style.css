@@ -7,18 +7,22 @@ body {
 body * {
     box-sizing: content-box;
 }
+
 main {
     padding: 3rem;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 nav {
     display: flex;
     gap: 32px;
     height: 100%;
 }
+
 header {
     height: 80px;
     padding: 0px 3rem;
@@ -28,25 +32,30 @@ header {
     gap: 32px;
     box-shadow: 0px 1px 2px #00000024;
 }
+
 header .logo {
     height: 100%;
 }
+
 nav .menu-option {
     font-size: 14px;
     font-weight: 600;
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: auto; 
+    margin-left: auto;
 }
+
 .menu-option.active {
-    border-bottom: 3px solid black;   
+    border-bottom: 3px solid white;
 }
+
 .present {
     display: flex;
     justify-content: center;
     margin: 10rem;
 }
+
 .present h1 {
     display: flex;
     text-align: center;
@@ -54,24 +63,27 @@ nav .menu-option {
     font-size: 4rem;
     margin-top: -20px;
 }
+
 .present p {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 25px; 
+    font-size: 25px;
     margin-top: -23px;
 }
+
 .present h2 {
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 38px;
 }
+
 .present .present-b a {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     padding: 6px;
     margin-right: 18rem;
     margin-left: 18rem;
@@ -80,10 +92,12 @@ nav .menu-option {
     border-radius: 4px;
     transition: all 400ms ease;
 }
+
 .present .present-b a:hover {
-    background: black ;
+    background: black;
     color: aliceblue;
 }
+
 .final {
     height: 80px;
     padding: 0px 3rem;
@@ -94,7 +108,8 @@ nav .menu-option {
     background-color: #000000;
     color: white;
 }
-.final a{
+
+.final a {
     text-decoration: underline red;
 
 }
