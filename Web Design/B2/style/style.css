@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+    box-sizing: content-box;
+}
+
+main {
+    padding: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+}
+
+header {
+    height: 80px;
+    padding: 0px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    box-shadow: 0px 1px 2px #00000024;
+}
+
+header .logo {
+    height: 100%;
+}
+
+nav .menu-option {
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-option.active {
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+
+.present {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(66, 65, 65, 0.9) 100%), url(../img/1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.present .contenedor {
+    margin: 0 auto;
+    margin-bottom: 10em;
+    padding-left: 5rem;
+}
+
+.present .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.present h3 {
+    margin-left: 1rem;
+}
+
+.present .descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-left: 1rem;
+}
+
+.present .boton {
+    background: rgba(255, 0, 0, 0.851);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.present .boton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.present .boton i {
+    margin-right: 1.25em;
+}
