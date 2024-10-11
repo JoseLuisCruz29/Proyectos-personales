@@ -1,24 +1,30 @@
 const carousel = document.querySelector(".carousel");
-const arrowBtns = document.querySelectorAll(".wrapper i");
+const arrowRight = document.querySelectorAll("#right");
+const arrowLeft = document.querySelectorAll("#left");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 
 let isDragging = false, startX, startScrollLeft;
 
-arrowBtns.forEach(btn => {
+arrowRight.forEach(btn => {
     btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id === "left" ? - firstCardWidth : firstCardWidth;
-    })
+        carousel.scrollLeft += firstCardWidth;
+    });
 });
 
-const dragStart = (e) =>{
+arrowLeft.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft -= firstCardWidth;
+    });
+});
+const dragStart = (e) => {
     isDragging = true;
     carousel.classList.add("dragging");
     startX = e.pageX;
     startScrollLeft = carousel.scrollLeft;
 }
 
-const dragging = (e) =>{
-    if(!isDragging) return; 
+const dragging = (e) => {
+    if (!isDragging) return;
     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 }
 const dragStop = () => {
@@ -26,6 +32,7 @@ const dragStop = () => {
     carousel.classList.remove("dragging");
 }
 
-carousel.addEventListener("mousedown",dragStart);
-carousel.addEventListener("mousemove",dragging);
-document.addEventListener("mousemove",dragStop);
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragStop);
+carousel.addEventListener("mouseleave", dragStop); 

@@ -1,10 +1,15 @@
-let background = []
+let background = ['img/background.jpg', 'img/background2.jpg', 'img/background3.jpg']
 
-background[0] = 'img/background.jpg';
-background[1] = 'img/background2.jpg';
-background[2] = 'img/background3.jpg';
+function getBackground() {
+    const previousBg = localStorage.getItem('background');
+    let setBackground = Math.floor(Math.random() * background.length);
+    if (previousBg == setBackground) {
+        return getBackground();
+    }
+    localStorage.setItem('background', setBackground);
+    document.body.style.backgroundImage = `url(${background[setBackground]})`;
+}
 
 window.onload = function () {
-    let setBackground = Math.floor( Math.random()) * background.length;
-    document.body.style.backgroundImage = `url(${background[setBackground]})`;
+    getBackground();
 }

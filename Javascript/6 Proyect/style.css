@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #121212;
+    color: #ff0000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons button {
+    background-color: #e01111;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 20px;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #e70e0e;
+}
+
+.hero-content p {
+    color: #fb0909;
+}
+
+.hero-content .read-more {
+    background-color: #ff0000;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.artwork-section,
+.recent-search {
+    margin: 20px;
+}
+
+.artwork-section h2,
+.recent-search h2 {
+    font-size: 28px;
+    color: #5a3d7b;
+}
+
+.artwork-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.artwork-gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.recent-search ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-search ul li {
+    margin-bottom: 10px;
+}
+
+.recent-search ul li a {
+    text-decoration: none;
+    color: #5a3d7b;
+    font-weight: bold;
+    background-color: #e4d3ef;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.extra-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.extra-links .link-box {
+    background-color: #e4d3ef;
+    color: #5a3d7b;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+}

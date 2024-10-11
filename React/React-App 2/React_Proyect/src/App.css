@@ -1,0 +1,119 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  /* Quitar el margen predeterminado */
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  /* Fondo oscuro para la barra de navegación */
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra para darle profundidad */
+  position: fixed;
+  /* Fijar la barra de navegación en la parte superior */
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 5%;
+}
+
+.App {
+  position: relative;
+}
+
+.main {
+  max-width: 600px;
+  margin: 80px auto;
+  /* Margen superior para evitar que el contenido se esconda detrás de la barra de navegación */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  left: 50%;
+  right: 50%;
+  transform: translate(80%, -50%);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* Espaciar los elementos de la barra de navegación */
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 15px;
+}
+
+.nav-link button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-link button:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: black;
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li button {
+  background-color: #ff4d4d;
+  /* Botón de eliminar en rojo */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+li button:hover {
+  background-color: #ff1a1a;
+}

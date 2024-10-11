@@ -1,69 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Ahorro</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sukuna</title>
 </head>
 
 <body>
-    <div class="calculator-container">
-        <div class="calculator-header">
-            <h1>Calculadora de Ahorro</h1>
-            <p>Novedosa calculadora que detalla las ganancias que obtienes con tus ahorros cada mes del año.</p>
-            <p>Completa el formulario y planifica tu futuro.</p>
-        </div>
-        <form id="savings-form" class="calculator-form">
-            <div class="form-group">
-                <label for="product">Producto</label>
-                <select id="product" required>
-                    <option value="savings-account">Cuenta de Ahorros</option>
-                    <option value="fixed-term">Depósito a Plazo Fijo</option>
-                    <option value="investment-fund">Fondo de Inversión</option>
-                </select>
+    <header>
+        <nav>
+            <div class="logo">Jujutsu Kaisen</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Mensajes</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Log In</button>
+                <button class="signup-btn">Sign Up</button>
             </div>
-
-            <div class="form-group">
-                <label for="amount">Monto Inversión ($)</label>
-                <input type="number" id="amount" placeholder="Monto inversión" required>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Ryomen Sukuna</h1>
+                <p>Es uno de los Antagonista de la serie ya nombrada
+                    el rey de las maldiciones.
+                </p>
+                <a href="#" class="read-more">Read More</a>
             </div>
-
-            <div class="form-group">
-                <label for="term">Plazo</label>
-                <input type="number" id="term" value="1" required>
-                <select id="term-period">
-                    <option value="years">Años</option>
-                    <option value="months">Meses</option>
-                </select>
+            <div class="hero-image">
+                <img src="img/sukuna.png" alt="Ryomen Sukuna">
             </div>
-
-            <div class="form-group">
-                <label for="interest-rate">Tasa de Interés Anual (%)</label>
-                <input type="number" id="interest-rate" placeholder="Tasa de interés anual" required step="0.01">
-                <small>*Para colocar la tasa, es recomendable consultar nuestro <a href="#">Tarifario de
-                        Servicios</a></small>
+        </section>
+        <section class="artwork-section">
+            <h2>Artwork</h2>
+            <div class="artwork-gallery">
+                <img src="img/Artwork 1.jpg" alt="Artwork 1" width="200">
+                <img src="img/Artwork 2.png" alt="Artwork 2" width="200">
             </div>
-
-            <div class="form-group">
-                <label for="start-date">Fecha Apertura</label>
-                <input type="date" id="start-date" value="2024-08-16">
+        </section>
+        <section class="recent-search">
+            <h2>Recent Search</h2>
+            <ul>
+                <li><a href="#">Raiden Shogun Build</a></li>
+                <li><a href="#">Raiden Shogun Wallpaper</a></li>
+                <li><a href="#">Raiden Shogun Cosplay</a></li>
+                <li><a href="#">Raiden Shogun Icon</a></li>
+            </ul>
+            <div class="extra-links">
+                <div class="link-box">Personajes Electro</div>
+                <div class="link-box">inazuma</div>
+                <div class="link-box">Constellation</div>
             </div>
-
-            <div class="form-group">
-                <label for="tax-rate">Impuesto (%)</label>
-                <input type="number" id="tax-rate" value="10" required step="0.01">
-                <small>*Impuesto gravado al interés generado, como establece la ley.</small>
-            </div>
-
-            <button type="submit" class="calculate-button">Solicitar Cuenta de Ahorro</button>
-        </form>
-        <div id="result" class="result-container">
-            <!-- Aquí se mostrará el resultado -->
-        </div>
-    </div>
-    <script src="script/script.js"></script>
+        </section>
+    </main>
 </body>
 
 </html>

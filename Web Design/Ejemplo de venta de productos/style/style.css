@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 80px;
+    padding: 0px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    box-shadow: 0px 0px 5px rgb(1, 1, 1);
+}
+
+header .logo {
+    height: 100%;
+}
+
+header input {
+    height: 36px;
+    width: 30rem;
+    border: none;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+}
+
+nav .menu-option {
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.card1 {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.card-img-top {
+    height: auto;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

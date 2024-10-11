@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* HEADER */
+header {
+    height: 90px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.662);
+}
+
+.logo {
+    height: 100%;
+    padding-right: 17rem;
+}
+
+.menu-option {
+    padding: 8px;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.menu-button a:hover {
+    background: black;
+    color: aliceblue;
+}
+
+/* SECTION */
+section {
+    background-image: url(img/1336966.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5% 5% 0% 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    height: auto;
+}
+
+/* CONTENIDO PRINCIPAL */
+.present {
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.present h1 {
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.present p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 20px;
+}
+
+.main-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: white;
+    margin: auto 15rem auto 15rem;
+    background: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.main-button a:hover {
+    background: white;
+    color: green;
+}
+
+/* MEDIA QUERIES */
+
+/* Para pantallas más pequeñas, como teléfonos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .present h1 {
+        font-size: 3rem;
+    }
+
+    .main-button a {
+        margin: auto 5rem auto 5rem;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Para pantallas medianas, como tablets */
+@media (max-width: 1024px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-button a {
+        margin: auto 8rem auto 8rem;
+    }
+
+    .present h1 {
+        font-size: 4rem;
+    }
+}
